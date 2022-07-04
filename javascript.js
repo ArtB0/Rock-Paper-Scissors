@@ -9,4 +9,20 @@ function computerPlay () {
 
 }
 
-computerPlay();
+/* computerPlay(); */
+
+
+let playerInput = prompt ('Rock, Paper or Scissors?')
+
+
+function playerSelection () {
+    
+
+}
+
+
+
+function playRound () {
+
+
+}
