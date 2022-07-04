@@ -3,47 +3,41 @@
 
 function computerPlay () {
     let myArray = ['rock', 'paper', 'scissors'];
-    let computerSelection = myArray [Math.floor(Math.random() * myArray.length)];
+    let selection = myArray [Math.floor(Math.random() * myArray.length)];
 
-    return computerSelection;
+    return selection;
 
 }
 
 
-computerPlay();
-
-
-let playerSelection = prompt ('Rock, Paper or Scissors?')
 
 function playRound (playerSelection, computerSelection) {
 
     if (playerSelection === computerSelection) {
-        /* return "Tie!"; */
-        alert ("Tie!");
+        return "Tie!";
      }
 
      else if (playerSelection === 'paper' && computerSelection === 'rock') {
-       /* return "Win!"; */
-        alert ("Win!");
+        return "Win!"; 
     }
 
     else if (playerSelection === 'rock' &&  computerSelection === 'scissors') {
-      /*  return "Win!"  */
-        alert ("Win!");
+        return "Win!"; 
     }
 
     else if (playerSelection === 'scissors' && computerSelection === 'paper') {
-        /*  return "Win!"  */
-        alert ("Win!");
+        return "Win!"; 
     }
 
     else {
-        alert ('Loser! ${computerSelection} beats ${playerSelection}');
-        /* return '"Loser! ${computerSelection} beats ${playerSelection}"' */
+        return 'Loser!'
     }
 
     
 }
 
-playRound();
+
+const computerSelection = computerPlay();
+const playerSelection = prompt ('Rock, Paper or Scissors?')
+console.log(playRound(playerSelection, computerSelection));
 
