@@ -3,22 +3,16 @@ let myArray = ['rock', 'paper', 'scissors'];
 
 function computerPlay () {
 
-    let computerAnswer = myArray [Math.floor(Math.random() * myArray.length)];
+    let computerSelection = myArray [Math.floor(Math.random() * myArray.length)];
 
-    console.log (computerAnswer);
+    console.log (computerSelection);
 
 }
 
 /* computerPlay(); */
 
 
-let playerInput = prompt ('Rock, Paper or Scissors?')
-
-
-function playerSelection () {
-    
-
-}
+let playerSelection = prompt ('Rock, Paper or Scissors?')
 
 
 
