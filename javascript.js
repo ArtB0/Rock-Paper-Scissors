@@ -32,12 +32,22 @@ function playRound (playerSelection, computerSelection) {
     else {
         return 'Loser!'
     }
-
     
 }
 
 
+function game () {
+
+    for (let i = 0; i < 5; i++) {
+        const playerSelection = prompt ('Rock, Paper or Scissors?');
+        console.log(playRound(playerSelection, computerSelection));
+    }
+}
+
+
 const computerSelection = computerPlay();
-const playerSelection = prompt ('Rock, Paper or Scissors?')
-console.log(playRound(playerSelection, computerSelection));
+
+
+game ();
+
 
