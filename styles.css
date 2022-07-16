@@ -1,0 +1,37 @@
+
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1f2937;
+}
+
+.headerText {
+    font-size: 48px;
+    color: #f9faf8;
+}
+
+.container {
+    border: 1px black solid;
+    display: flex;
+}
+
+.left {
+    border: 1px black solid;
+    flex: 1;
+}
+
+.right {
+    border: 1px black solid;
+    flex: 1;
+}
+
+
+.middle {
+    border: 1px black solid;
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+}
+
+
