@@ -2,7 +2,7 @@
 let playerScore = 0
 let computerScore = 0
 
-const computerSelection = computerPlay();
+
 
 function computerPlay () {
     let myArray = ['rock', 'paper', 'scissors'];
@@ -14,6 +14,8 @@ function computerPlay () {
 
 
 function playRound () {
+
+    let computerSelection = computerPlay();
 
     if (playerSelection === computerSelection) {
         /*return "Tie!"; */
@@ -71,21 +73,21 @@ function game () {
 
 }
 
-const rock = document.querySelector('#rock');
+const rock = document.querySelector('#rock-btn');
 rock.addEventListener('click', function() {
     playerSelection='rock';
     playRound();
 });
 
 
-const paper = document.querySelector('#paper');
+const paper = document.querySelector('#paper-btn');
 paper.addEventListener('click', function() {
     playerSelection='paper';
     playRound();
 });
 
 
-const scissors = document.querySelector('#scissors');
+const scissors = document.querySelector('#scissors-btn');
 scissors.addEventListener('click', function() {
     playerSelection='scissors';
     playRound();
