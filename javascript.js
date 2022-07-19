@@ -7,14 +7,13 @@ const computerSelection = computerPlay();
 function computerPlay () {
     let myArray = ['rock', 'paper', 'scissors'];
     let selection = myArray [Math.floor(Math.random() * myArray.length)];
-
     return selection;
 
 }
 
 
 
-function playRound (playerSelection, computerSelection) {
+function playRound () {
 
     if (playerSelection === computerSelection) {
         /*return "Tie!"; */
@@ -73,8 +72,31 @@ function game () {
 }
 
 const rock = document.querySelector('#rock');
-rock.addEventListener('click', rockSelection());
+rock.addEventListener('click', function() {
+    playerSelection='rock';
+    playRound();
+});
 
+
+const paper = document.querySelector('#paper');
+paper.addEventListener('click', function() {
+    playerSelection='paper';
+    playRound();
+});
+
+
+const scissors = document.querySelector('#scissors');
+scissors.addEventListener('click', function() {
+    playerSelection='scissors';
+    playRound();
+});
+
+
+
+
+
+
+/*
 function rockSelection() {
     let playerSelection = 'rock';
 }
@@ -84,6 +106,7 @@ button.forEach(button =>
 button.addEventListener('click', playRound() => {
     game();
 });
+*/
 
 
 
