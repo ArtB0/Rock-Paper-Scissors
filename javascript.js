@@ -42,6 +42,8 @@ function playRound () {
         result = ('You lose! ' + computerSelection + ' beats ' + playerSelection)
     }
 
+
+    updateScore();
     game();
 
     document.getElementById('result').innerHTML = result
@@ -51,6 +53,10 @@ function playRound () {
 }
 
 function updateScore () {
+    let score = ''
+    score =  ('Your score: ' + playerScore + ' Computer score: ' + computerScore);
+    document.getElementById('score').innerHTML = score
+    return
 
 }
 

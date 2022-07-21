@@ -12,37 +12,39 @@
 }
 
 .container {
-    border: 1px black solid;
     display: flex;
 }
 
 .left {
-    border: 1px black solid;
     flex: 1;
 }
 
 .right {
-    border: 1px black solid;
     flex: 1;
 }
 
 
 .middle {
-    border: 1px black solid;
     flex: 3;
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .containerTwo {
-    border: 1px black solid;
     display: flex;
     justify-content: center;
 }
 
 .containerThree {
-    border: 1px black solid;
-    
+    display: flex;
+    justify-content: center;    
+}
+
+.containerFour {
+    display: flex;
+    justify-content: center;
 }
 
 
