@@ -2,6 +2,14 @@
 let playerScore = 0
 let computerScore = 0
 
+function disableButtons () {
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach (Element => {
+        Element.disabled = true
+    })
+
+}
+
 
 
 function computerPlay () {
@@ -62,19 +70,23 @@ function updateScore () {
 
 
 function game () {
-
         let endScore = ''
 
         if (playerScore >= 5) {
             endScore = ('You win!');
+            disableButtons();
         }
     
         else if (computerScore >= 5) {
             endScore = ('You lose!');
+            disableButtons();
+
         }
 
         else if (playerScore == 5 && computerScore == 5) {
             endScore = ('Issa tie!')
+            disableButtons();
+
         }
 
         document.getElementById('endScore').innerHTML = endScore
@@ -102,6 +114,7 @@ scissors.addEventListener('click', function() {
     playRound();
 });
 
+updateScore();
 
 
 
