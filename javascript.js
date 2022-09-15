@@ -114,6 +114,10 @@ scissors.addEventListener('click', function() {
     playRound();
 });
 
+// refresh for new game
+const reset = document.querySelectorAll('#reset-btn');
+reset.addEventListener('click', () => location.reload());
+
 updateScore();
 
 
