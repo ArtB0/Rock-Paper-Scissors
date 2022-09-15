@@ -3,14 +3,21 @@ let playerScore = 0
 let computerScore = 0
 
 function disableButtons () {
-    const buttons = document.querySelectorAll('button');
+    document.getElementById("rock-btn").disabled=true;
+    document.getElementById("scissors-btn").disabled=true;
+    document.getElementById("paper-btn").disabled=true;
+    }
+
+
+/* DISABLE ALL BUTTONS
+
+function disableButtons () {
+    const buttons = document.querySelector('#middle');
     buttons.forEach (Element => {
         Element.disabled = true
     })
-
 }
-
-
+*/
 
 function computerPlay () {
     let myArray = ['rock', 'paper', 'scissors'];
@@ -114,9 +121,13 @@ scissors.addEventListener('click', function() {
     playRound();
 });
 
+
+
 // refresh for new game
-const reset = document.querySelectorAll('#reset-btn');
-reset.addEventListener('click', () => location.reload());
+const reset = document.querySelector('#reset-btn');
+reset.addEventListener('click', function() {
+    window.location.reload();
+})
 
 updateScore();
 
