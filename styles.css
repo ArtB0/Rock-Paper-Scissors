@@ -52,22 +52,19 @@
     justify-content: center;
 }
 
-#reset-btn {
-    display: inline-block;
-    padding: 0.6em 1.7em;
-    border: 0.1em solid #ffffff;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    color: #2d1d1d;
-    text-align: center;
-    transition: all 0.2s;
-}
 
-#reset-btn:hover {
-    color: #000000;
-    background-color: #a97878;
-}
+
+#reset-btn {
+    color: #ffffff;
+    background-color: #1b2f31;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100px;
+    font-size: medium;
+    font-weight: 400;
+    border-width: 1px;
+  }
+
