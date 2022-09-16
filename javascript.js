@@ -127,9 +127,19 @@ scissors.addEventListener('click', function() {
 const reset = document.querySelector('#reset-btn');
 reset.addEventListener('click', function() {
     window.location.reload();
+    
 })
 
 updateScore();
+
+
+
+// style
+
+//restart btn
+reset.innerHTML = "Restart";
+//reset.style.cssText = 'color: green; background: white'
+
 
 
 
