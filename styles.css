@@ -1,5 +1,12 @@
 
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
 .header {
     display: flex;
     justify-content: space-around;
@@ -40,7 +47,7 @@
 
 .containerThree {
     display: flex;
-    justify-content: center;    
+    justify-content: center; 
 }
 
 .containerFour {
@@ -55,16 +62,26 @@
 }
 
 .footer {
+    margin-top: auto;
     display: flex;
     justify-content: center;
+    background-color: #1b2f31;
     
+}
+
+#result {
+    margin: 25px;
 }
 
 
 
+
+/* buttons */
+
+
 #reset-btn {
     color: #ffffff;
-    background-color: #1b2f31;
+    background-color: #5b797b;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -73,9 +90,75 @@
     width: 100px;
     font-size: medium;
     font-weight: 400;
-    border-width: 1px;
+    border-width: 0px;
   }
 
 
+  #rock-btn {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 3px;
+    color: #000;
+    background: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 12px 20px;
+    text-align:center;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1); 
+  }
+
+  #rock-btn:hover{
+    background: rgb(212, 190, 160);
+}
+
+
+#paper-btn {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 3px;
+    color: #000;
+    background: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 12px 20px;
+    text-align:center;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1); 
+  }
+
+  #paper-btn:hover{
+    background: rgb(173, 219, 225);
+}
+
+  #scissors-btn {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 3px;
+    color: #000;
+    background: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 12px 20px;
+    text-align:center;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1); 
+  }
+
+  #scissors-btn:hover{
+    background: rgb(251, 193, 245);
+}
 
 

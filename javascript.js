@@ -2,22 +2,7 @@
 let playerScore = 0
 let computerScore = 0
 
-function disableButtons () {
-    document.getElementById("rock-btn").disabled=true;
-    document.getElementById("scissors-btn").disabled=true;
-    document.getElementById("paper-btn").disabled=true;
-    }
 
-
-/* DISABLE ALL BUTTONS
-
-function disableButtons () {
-    const buttons = document.querySelector('#middle');
-    buttons.forEach (Element => {
-        Element.disabled = true
-    })
-}
-*/
 
 function computerPlay () {
     let myArray = ['rock', 'paper', 'scissors'];
@@ -69,7 +54,7 @@ function playRound () {
 
 function updateScore () {
     let score = ''
-    score =  ('Your score: ' + playerScore + ' Computer score: ' + computerScore);
+    score =  ('Your score: ' + playerScore + ' | ' + ' Computer score: ' + computerScore);
     document.getElementById('score').innerHTML = score
     return
 
@@ -77,7 +62,7 @@ function updateScore () {
 
 
 function game () {
-        let endScore = ''
+        let endScore = '🤌'
 
         if (playerScore >= 5) {
             endScore = ('You win!');
@@ -100,6 +85,15 @@ function game () {
         return
 
 }
+
+function disableButtons () {
+    document.getElementById("rock-btn").disabled=true;
+    document.getElementById("scissors-btn").disabled=true;
+    document.getElementById("paper-btn").disabled=true;
+    }
+
+
+    
 
 const rock = document.querySelector('#rock-btn');
 rock.addEventListener('click', function() {
@@ -131,10 +125,10 @@ reset.addEventListener('click', function() {
 })
 
 updateScore();
+game();
 
 
 
-// style
 
 //restart btn
 reset.innerHTML = "Restart";
