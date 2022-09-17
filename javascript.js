@@ -138,8 +138,9 @@ updateScore();
 
 //restart btn
 reset.innerHTML = "Restart";
-//reset.style.cssText = 'color: green; background: white'
 
+const footer = document.querySelector(".footer");
+footer.innerHTML = "Github";
 
 
 
