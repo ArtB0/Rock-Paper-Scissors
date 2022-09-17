@@ -82,6 +82,10 @@ function game () {
         }
 
         document.getElementById('endScore').innerHTML = endScore
+        document.getElementById('endScore').style.color='red'
+        document.getElementById('endScore').style.fontSize='20px'
+        document.getElementById('endScore').style.fontVariant='small-caps'
+
         return
 
 }
@@ -116,8 +120,6 @@ scissors.addEventListener('click', function() {
 });
 
 
-
-// refresh for new game
 const reset = document.querySelector('#reset-btn');
 reset.addEventListener('click', function() {
     window.location.reload();
@@ -131,10 +133,11 @@ game();
 
 
 //restart btn
-reset.innerHTML = "Restart";
+//reset.innerHTML = "Restart";
+
 
 const footer = document.querySelector(".footer");
-footer.innerHTML = "Github";
+//footer.innerHTML = "Github";
 
 
 
