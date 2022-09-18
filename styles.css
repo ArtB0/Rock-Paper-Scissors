@@ -11,15 +11,18 @@ body {
     display: flex;
     justify-content: space-around;
     background-color: #1f2937;
+    font-size: 4px;
 }
 
 .headerText {
-    font-size: 48px;
+    font-size: 40px;
     color: #f9faf8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
     display: flex;
+    padding: 25px;
 }
 
 .left {
@@ -66,7 +69,8 @@ body {
     display: flex;
     justify-content: center;
     background-color: #1b2f31;
-    color: #ffffff;
+    color: #5b797b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
 
@@ -78,8 +82,16 @@ a, a:hover, a:focus, a:active {
 
 #result {
     margin: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#score {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#endScore {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 
 
@@ -165,7 +177,7 @@ a, a:hover, a:focus, a:active {
   }
 
   #scissors-btn:hover{
-    background: rgb(251, 193, 245);
+    background: rgb(231, 245, 153);
 }
 
 
